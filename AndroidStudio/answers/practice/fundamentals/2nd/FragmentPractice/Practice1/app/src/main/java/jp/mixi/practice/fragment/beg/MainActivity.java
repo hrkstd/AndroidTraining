@@ -12,8 +12,8 @@ public class MainActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        FragmentManager manager = getSupportFragmentManager();
-        manager.findFragmentById(R.id.my_fragment);
+//        FragmentManager manager = getSupportFragmentManager();
+//        manager.findFragmentById(R.id.my_fragment);
 
 
     }

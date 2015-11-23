@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ccccff"
+            android:orientation="horizontal"
+            android:padding="4dp" >
+
+            <ImageView
+                android:id="@+id/icon_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:background="#ffffff"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:src="@drawable/ic_launcher"
+                android:layout_alignParentRight="true"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/icon_01"
+                android:layout_toStartOf="@+id/icon_01"
+                android:layout_marginRight="40dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/imageTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:gravity="right"
+                    android:text="ドロイド君の画像ファイル"
+                    android:textSize="8pt"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageTitle"
+                    android:layout_alignRight="@+id/imageTitle"
+                    android:gravity="right"
+                    android:text="*********.png"
+                    android:textSize="7pt"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ccccff"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="xhdpi"
+            android:textSize="7pt"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="12,516bytes"
+            android:textSize="7pt"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

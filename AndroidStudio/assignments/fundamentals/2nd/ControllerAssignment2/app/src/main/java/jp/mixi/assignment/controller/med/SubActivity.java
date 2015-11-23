@@ -6,6 +6,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * TODO: 課題2
@@ -19,6 +20,7 @@ public class SubActivity extends Activity implements TextWatcher {
         // Hint: 状態遷移が何も起こっていない場合は、savedInstanceState は null です
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub);
+        Toast.makeText(this, "onCreate", Toast.LENGTH_LONG).show();
     }
 
     @Override
